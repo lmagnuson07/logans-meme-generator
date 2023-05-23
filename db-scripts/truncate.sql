@@ -1,0 +1,3 @@
+-- USE memes;
+
+TRUNCATE meme;

@@ -1,0 +1,27 @@
+# Disable directory browsing
+Options -Indexes
+
+# Hide the contents of directories
+IndexIgnore *
+
+# Deny access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# Deny access to files with extensions .ini, .psd, .log, .sh
+<FilesMatch "\.(env|example|gitignore|md)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+<Files composer.json>
+Order allow,deny
+Deny from all
+</Files>
+
+<Files composer.lock>
+Order allow,deny
+Deny from all
+</Files>

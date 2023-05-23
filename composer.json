@@ -5,11 +5,24 @@
             "App\\": "backend/classes/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "backend/tests/"
+        }
+    },
+    "scripts": {
+        "dump": [
+            "composer dump-autoload -o"
+        ]
+    },
     "authors": [
         {
             "name": "lmagnuson07",
             "email": "logmagns07@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "ext-pdo": "*"
+    }
 }
