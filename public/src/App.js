@@ -44,6 +44,7 @@ function App() {
               id="name"
               name="name"
               value={name}
+              placeholder="Enter a search term"
               onChange={handleChange}
           />
           <br />

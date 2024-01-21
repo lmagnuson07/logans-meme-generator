@@ -1,1 +1,1 @@
-# logans-meme-generator
+# Logan's Meme Generator
